@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3cb371;
+    /* padding: 40px; */
+}
+
+main {
+    max-width: 1500px;
+    display: flex;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    font-size: 1em;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+section:nth-of-type(1) {
+    width: 60%;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+section:nth-of-type(2) {
+    width: 35%;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+section .bbox {
+    height: 600px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+    position: relative;
+    overflow:hidden;
+}
+
+section .bbox img {
+    width: 100%;
+    height: auto;
+}
+
+#bfirst #under {
+    padding-top: 1.8rem;
+}
+
+section #first #under {
+    padding-top: 0.1rem;
+}
+
+section .sbox {
+    height:300px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+section .city {
+    height: 500px;
+}
+
+section .city img {
+    width:100%;
+    height: auto;
+}
+
+section .city p {
+    padding-top: 0.6rem;
+}
+
+section .city #under {
+    padding-top: 0.6rem;
+}
+
+section div {
+    flex-grow: 1;
+}
+
+section .content {
+    padding:20px;
+}
+
+section .content h2 {
+    margin-bottom: 10px;
+}
+
+section .content p {
+    margin-bottom:25px;
+}
+
+#under {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+    padding-right: 0.1rem;
+}
+
+@media (max-width:1100px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section .bbox {
+        height: 700px;
+    }
+
+    section #bfirst {
+        height: 740px;
+    }
+    
+   section:nth-of-type(1) {
+    width: 68%;
+    margin:0 auto;
+    
+   }
+
+   section:nth-of-type(2) {
+    width: 68%;
+    margin:0 auto;
+   }
+
+   section .city {
+       height: 600px;
+   }
+}
+
+@media (max-width:622px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    section .bbox {
+        height: 600px;
+    }
+    
+   section:nth-of-type(1) {
+    width: 100%;
+    margin: auto;
+    
+   }
+
+   section:nth-of-type(2) {
+    width: 100%;
+    margin: auto;
+   }
+
+   #bsecond {
+       height:630px;
+   }
+}
